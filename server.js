@@ -1,10 +1,13 @@
-const app = require("./server")
+//importar el servidor
+const app = require("./server");
 
-const PORT = 8001
+//puerto donde escuchara el servidor
+const PORT = 8001;
 
+//configurar el servidor para escuchar en el puerto
 try {
     app.listen(PORT, () => {
-        console.log(`listening on port:${PORT}`)
+        console.log(`servidor corriendo en el puerto ${PORT}`);
     });
 } catch (error) {
     console.log("🚀 ~ error:", error)
